@@ -57,26 +57,28 @@
                 </div>
 
                 <div class="flex-row justify-between group_7">
-                  <div class="flex-row group_8 space-x-8">
+                  <div class="flex-row items-center group_8 space-x-8">
                     <img
-                      class="image_5 image_6"
+                      class="star_icon"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477769687670482.png"
                     />
-                    <span class="font_5">5</span>
+                    <span class="star_value">5</span>
                   </div>
-                  <div class="flex-row space-x-4">
+
+                  <div class="flex-row items-center space-x-4">
                     <img
                       class="image_7"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477769752506235.png"
                     />
-                    <span class="font_5">120</span>
+                    <span class="star_value">120</span>
                   </div>
-                  <div class="flex-row group_9 space-x-4">
+
+                  <div class="flex-row items-center group_9 space-x-4">
                     <img
-                      class="image_5"
+                      class="star_icon"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477770126886976.png"
                     />
-                    <span class="font_5">56</span>
+                    <span class="star_value">56</span>
                   </div>
                 </div>
               </div>
@@ -272,20 +274,18 @@ export default {
   padding: 0 2.44rem;
 }
 .group_8 {
-  padding: 0 0.31rem;
+  padding: 0 0.3rem;
 }
 .space-x-8 > *:not(:first-child) {
   margin-left: 0.5rem;
 }
-.image_5 {
+.star_icon {
   flex-shrink: 0;
   width: 0.75rem;
   height: 0.75rem;
 }
-.image_6 {
-  margin-bottom: 0.13rem;
-}
-.font_5 {
+
+.star_value {
   font-size: 0.63rem;
   font-family: "PingFang SC";
   line-height: 0.88rem;

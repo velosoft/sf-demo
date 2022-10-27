@@ -1,7 +1,7 @@
 <template>
   <div class="flex-col page space-y-10">
     <div class="flex-col section space-y-6">
-      <div class="flex-row justify-center group">
+      <div class="flex-row justify-center group" style="opacity: 0;">
         <div class="flex-row group_2 space-x-5">
           <img
             class="image"

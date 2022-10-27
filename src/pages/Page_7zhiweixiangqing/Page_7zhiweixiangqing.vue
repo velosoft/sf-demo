@@ -1,7 +1,7 @@
 <template>
   <div class="flex-col page">
     <div class="flex-col header space-y-14">
-      <div class="flex-row justify-center status_bar">
+      <div class="flex-row justify-center status_bar" style="opacity: 0;">
         <div class="flex-row network space-x-5">
           <img
             class="network_icon"
@@ -314,6 +314,7 @@ export default {
   font-size: 16px;
   font-family: "PingFang SC";
   line-height: 22px;
+  color: #ffffff;
 }
 .image_2 {
   width: 14.08px;
