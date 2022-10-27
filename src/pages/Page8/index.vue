@@ -34,9 +34,9 @@
           line-width="21"
         >
           <van-tab title="精品阅读">
-            <div class="flex-col list group_5 space-y-6">
+            <div class="flex-col card-list content space-y-6">
               <div
-                class="flex-col list-item space-y-14"
+                class="flex-col card-item space-y-14"
                 :key="i"
                 v-for="(item, i) in list"
               >
@@ -219,22 +219,22 @@ export default {
   font-weight: 500;
   color: #999999;
 }
-.list {
+.card-list {
   margin-top: 0.13rem;
 }
-.group_5 {
+.content {
   padding: 0.38rem 0.31rem 0;
 }
 .space-y-6 > *:not(:first-child) {
   margin-top: 0.38rem;
 }
-.list-item {
+.card-item {
   padding: 0.63rem 0.38rem 0.56rem;
   background-color: #ffffff;
   box-shadow: 0px 0px 0.31rem 0px #c0e2ff80;
   border-radius: 0.25rem;
 }
-.list-item:active {
+.card-item:active {
   filter: brightness(0.98);
 }
 .space-y-14 > *:not(:first-child) {
