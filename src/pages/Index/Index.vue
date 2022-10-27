@@ -79,12 +79,12 @@
             />
           </div>
           <div class="flex-col list">
-            <GangweiItem
-              class="listitem"
-              @click.native="onClickListItem"
-              :key="i"
-              v-for="(item, i) in listData"
-            />
+            <van-swipe-cell @click.native="onClickListItem" :key="i" v-for="(item, i) in listData">
+              <GangweiItem class="listitem" />
+              <template #right>
+                <SwipeAction class="swiper_action"/>
+              </template>
+            </van-swipe-cell>
           </div>
         </div>
       </van-tab>
@@ -100,9 +100,10 @@
 import GangweiItem from "../../components/GangweiItem/GangweiItem.vue";
 import TuijianPanel from "../../components/TuijianPanel/TuijianPanel.vue";
 import TuijianPopupPanle from "../../components/TuijianPopupPanle/TuijianPopupPanle.vue";
+import SwipeAction from '../../components/SwipeAction/SwipeAction.vue';
 
 export default {
-  components: { GangweiItem, TuijianPanel, TuijianPopupPanle },
+  components: { GangweiItem, TuijianPanel, TuijianPopupPanle, SwipeAction },
   data() {
     return {
       search_UuaIif82: "",
