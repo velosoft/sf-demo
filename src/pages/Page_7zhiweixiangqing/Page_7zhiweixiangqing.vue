@@ -191,11 +191,11 @@
           >
             <span class="job_title text_5">{{ item.title }}</span>
             <div class="flex-row">
-              <span class="job_item_text text_6">{{ item.addr }}</span>
+              <span class="job_item_info">{{ item.addr }}</span>
               <div class="job_divider"></div>
-              <span class="job_item_text text_7">{{ item.year }}</span>
+              <span class="job_item_info">{{ item.year }}</span>
               <div class="job_divider"></div>
-              <span class="job_item_text text_8">{{ item.edu }}</span>
+              <span class="job_item_info">{{ item.edu }}</span>
             </div>
           </div>
         </div>
@@ -259,6 +259,9 @@ export default {
   top: 50%;
   transform: translateY(-50%);
 }
+.space-x-5 > *:not(:first-child) {
+  margin-left: 5px;
+}
 .network_icon {
   flex-shrink: 0;
   align-self: center;
@@ -311,7 +314,6 @@ export default {
   font-size: 16px;
   font-family: "PingFang SC";
   line-height: 22px;
-  color: #ffffff;
 }
 .image_2 {
   width: 14.08px;
@@ -416,6 +418,9 @@ export default {
 .part_title_wrapper {
   padding: 14px 0;
 }
+.space-x-20 > *:not(:first-child) {
+  margin-left: 20px;
+}
 .part_line {
   margin: 3px 0 2px;
   background-color: #6e7ffe;
@@ -431,6 +436,9 @@ export default {
 }
 .part_detail {
   padding: 0 10px 14px 22px;
+}
+.space-y-9 > *:not(:first-child) {
+  margin-top: 9px;
 }
 .part-wrapper {
   margin-right: 12px;
@@ -495,9 +503,6 @@ export default {
   padding: 14px 0;
   background-color: #ffffff;
 }
-.space-y-9 > *:not(:first-child) {
-  margin-top: 9px;
-}
 .space-x-22 > *:not(:first-child) {
   margin-left: 22px;
 }
@@ -554,9 +559,6 @@ export default {
   margin-top: 24px;
   flex-shrink: 0;
 }
-.space-x-5 > *:not(:first-child) {
-  margin-left: 5px;
-}
 .phone_icon {
   margin: 3px 0 2px;
   flex-shrink: 0;
@@ -569,9 +571,6 @@ export default {
 .fav_wrapper {
   padding: 14px 0 15px;
 }
-.space-x-20 > *:not(:first-child) {
-  margin-left: 20px;
-}
 .job_list {
   padding-left: 22px;
   padding-right: 10px;
@@ -583,24 +582,21 @@ export default {
   border-top: solid 1px #eeeeee;
   border-bottom: solid 1px #eeeeee;
 }
+.space-y-4 > *:not(:first-child) {
+  margin-top: 4px;
+}
 .text_5 {
   margin-left: 14px;
   align-self: flex-start;
 }
-.text_6 {
+.job_item_info {
   margin-left: 18px;
   align-self: flex-start;
-}
-.text_7 {
-  margin-left: 18px;
-  align-self: flex-start;
-}
-.text_8 {
-  margin-left: 18px;
-  align-self: flex-start;
-}
-.space-y-4 > *:not(:first-child) {
-  margin-top: 4px;
+  font-size: 14px;
+  font-family: "PingFang SC";
+  line-height: 20px;
+  font-weight: 500;
+  color: #666666;
 }
 .job_divider {
   margin: 5px 0 3px 4px;
