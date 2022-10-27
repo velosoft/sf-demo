@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Tabbar from '../pages/tabbar/tabbar.vue';
 import Page8 from '../pages/Page8/index.vue'
 import Page9 from '../pages/Page9/index.vue'
+import Page7 from '../pages/Page_7zhiweixiangqing/Page_7zhiweixiangqing.vue'
 import SearchPage from '../pages/SearchPage/SearchPage.vue'
 import Page1 from '../pages/Index/Index.vue'
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/search',
     name: 'SearchPage',
     component: SearchPage,
+  },
+  {
+    path: '/page7',
+    name: 'page7',
+    component: Page7,
   }
 ];
 

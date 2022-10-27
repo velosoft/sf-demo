@@ -63,18 +63,18 @@
         </div>
         <div class="divider view"></div>
         <span class="hr_name job_bu">速运事业群仓储事业部</span>
-        <span class="font_3 text_2">有效期：2018年1月25日至2月14日</span>
+        <span class="job_item_text text_2">有效期：2018年1月25日至2月14日</span>
       </div>
       <div class="flex-col job_info space-y-6">
         <div class="flex-col job_part">
           <div class="flex-row part_title_wrapper space-x-20">
             <div class="part_line"></div>
-            <span class="font_4">工作职责</span>
+            <span class="fav_title">工作职责</span>
           </div>
           <div class="flex-col part_detail space-y-9">
             <div class="divider"></div>
             <div class="flex-col part-wrapper view_2">
-              <span class="font_5 text_3">
+              <span class="font_3 text_3">
                 1、根据仓储业务发展战略，分析用人部门招聘需求，制定年度招聘计划；
                 <br />
                 2、统筹与实施仓储地区关键岗位的招聘（如仓库负责人、储备干部等）；
@@ -95,12 +95,12 @@
         <div class="flex-col job_part">
           <div class="flex-row part_title_wrapper space-x-20">
             <div class="part_line"></div>
-            <span class="font_4">任职要求</span>
+            <span class="fav_title">任职要求</span>
           </div>
           <div class="flex-col group space-y-8">
             <div class="divider"></div>
             <div class="flex-col part-wrapper view_3">
-              <span class="font_5 text_3">
+              <span class="font_3 text_3">
                 1、人力资源相关专业优先；
                 <br />
                 2、3-5年人资相关工作经验，具备招聘、人才管理模块工作经验；
@@ -120,26 +120,30 @@
         <div class="flex-col job_salary">
           <div class="flex-row group_2 space-x-20">
             <div class="part_line"></div>
-            <span class="font_4">薪资待遇</span>
+            <span class="fav_title">薪资待遇</span>
           </div>
           <div class="flex-col text-wrapper">
-            <span class="font_6 text_4">五险一金，绩效奖金，年终分红，法定节假日，节日福利，专业培训等</span>
+            <span class="font_4 text_4"
+              >五险一金，绩效奖金，年终分红，法定节假日，节日福利，专业培训等</span
+            >
           </div>
         </div>
         <div class="flex-col job_salary">
           <div class="flex-row group_2 space-x-20">
             <div class="part_line"></div>
-            <span class="font_4">工作地址</span>
+            <span class="fav_title">工作地址</span>
           </div>
           <div class="flex-col text-wrapper_2">
-            <span class="font_6 text_4">深圳市南山区学府路以南与白石路以东交汇处深圳市软件产业基地</span>
+            <span class="font_4 text_4"
+              >深圳市南山区学府路以南与白石路以东交汇处深圳市软件产业基地</span
+            >
           </div>
         </div>
       </div>
       <div class="flex-col job_hr space-y-9">
         <div class="flex-row space-x-22">
           <div class="part_line"></div>
-          <span class="font_4">职位发布人</span>
+          <span class="fav_title">职位发布人</span>
         </div>
         <div class="flex-row hr_info">
           <div class="flex-col items-start avatar_wrapper">
@@ -155,14 +159,14 @@
           <div class="flex-col hr_contact">
             <div class="hr_user">
               <span class="hr_name">周毅</span>
-              <span class="phone hr_title">（人事负责人）</span>
+              <span class="font_5">（人事负责人）</span>
             </div>
             <div class="flex-row hr_email space-x-5">
               <img
                 class="email_icon"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477766073470063.png"
               />
-              <span class="email">zhouyi@sf-express.com</span>
+              <span class="font_5 email">zhouyi@sf-express.com</span>
             </div>
           </div>
           <div class="flex-row hr_phone space-x-5">
@@ -170,26 +174,28 @@
               class="phone_icon"
               src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477765308918972.png"
             />
-            <span class="phone">0755-36390789</span>
+            <span class="font_5">0755-36390789</span>
           </div>
         </div>
       </div>
       <div class="flex-col job_part view_4">
-        <div class="flex-row group_3 space-x-20">
+        <div class="flex-row fav_wrapper space-x-20">
           <div class="part_line"></div>
-          <span class="font_4">可能感兴趣的职位推荐</span>
+          <span class="fav_title">可能感兴趣的职位推荐</span>
         </div>
-        <div class="flex-col list">
-          <div class="flex-col list-item space-y-4" :key="i" v-for="(item, i) in list_G5147um6">
-            <span class="job_title text_6">人力资源初级专员</span>
+        <div class="flex-col job_list">
+          <div
+            class="flex-col list-item space-y-4"
+            :key="i"
+            v-for="(item, i) in favJobs"
+          >
+            <span class="job_title text_5">{{ item.title }}</span>
             <div class="flex-row">
-              <div class="flex-row">
-                <span class="font_3 text_7">深圳-科技园</span>
-                <div class="section view_5"></div>
-              </div>
-              <span class="font_3 text_8">1-2年</span>
-              <div class="section view_6"></div>
-              <span class="font_3 text_9">本科</span>
+              <span class="job_item_text text_6">{{ item.addr }}</span>
+              <div class="job_divider"></div>
+              <span class="job_item_text text_7">{{ item.year }}</span>
+              <div class="job_divider"></div>
+              <span class="job_item_text text_8">{{ item.edu }}</span>
             </div>
           </div>
         </div>
@@ -199,406 +205,407 @@
 </template>
 
 <script>
-  export default {
-    components: {},
-    data() {
-      return {
-        list_G5147um6: [null, null],
-      };
-    },
+export default {
+  components: {},
+  data() {
+    return {
+      favJobs: [
+        {
+          title: "人力资源初级专员",
+          addr: "深圳-科技园",
+          year: "1-2年",
+          edu: "本科",
+        },
+        {
+          title: "后勤保障中级专员",
+          addr: "深圳-科技园",
+          year: "2年以上",
+          edu: "本科",
+        },
+      ],
+    };
+  },
 
-    methods: {
-      onClick_Image() {
-        this.$router.back();
-      },
+  methods: {
+    onClick_Image() {
+      this.$router.back();
     },
-  };
+  },
+};
 </script>
 
 <style scoped lang="css">
-  .page {
-    background-color: #f7fafd;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 100%;
-  }
-  .header {
-    padding: 0.25rem 0.38rem 0.5rem;
-    background-color: #6e7ffe;
-    height: 4rem;
-  }
-  .space-y-14 > *:not(:first-child) {
-    margin-top: 0.88rem;
-  }
-  .status_bar {
-    position: relative;
-  }
-  .network {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .network_icon {
-    flex-shrink: 0;
-    align-self: center;
-    width: 2.13rem;
-    height: 0.38rem;
-  }
-  .font_1 {
-    font-size: 0.75rem;
-    font-family: 'Heiti SC';
-    line-height: 0.88rem;
-    font-weight: 200;
-    color: #ffffff;
-  }
-  .network_signal {
-    margin-bottom: 0.25rem;
-    flex-shrink: 0;
-    width: 0.81rem;
-    height: 0.56rem;
-  }
-  .status_text {
-    font-size: 0.75rem;
-    font-family: 'Heiti SC';
-    line-height: 0.88rem;
-    font-weight: 200;
-    color: #ffffff;
-  }
-  .battery {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .space-x-2 > *:not(:first-child) {
-    margin-left: 0.13rem;
-  }
-  .battery_icon {
-    margin-bottom: 0.25rem;
-    flex-shrink: 0;
-    width: 1.56rem;
-    height: 0.63rem;
-  }
-  .nav {
-    padding: 0 0.38rem;
-  }
-  .image {
-    width: 0.88rem;
-    height: 1.38rem;
-  }
-  .hr_name {
-    font-size: 1rem;
-    font-family: 'PingFang SC';
-    line-height: 1.38rem;
-    color: #ffffff;
-  }
-  .image_2 {
-    width: 0.88rem;
-    height: 1.38rem;
-  }
-  .nav_icon {
-    width: 0.88rem;
-    height: 1.38rem;
-  }
-  .job_detail {
-    padding-bottom: 4.19rem;
-    flex: 1 1 auto;
-    overflow-y: auto;
-  }
-  .job_summary {
-    padding: 0.75rem 0;
-    background-color: #ffffff;
-  }
-  .space-y-11 > *:not(:first-child) {
-    margin-top: 0.69rem;
-  }
-  .job_title {
-    font-size: 1.13rem;
-    font-family: 'PingFang SC';
-    line-height: 1.56rem;
-    font-weight: 600;
-    color: #333333;
-  }
-  .text {
-    margin-left: 0.88rem;
-    align-self: flex-start;
-  }
-  .job_sections {
-    padding: 0 1rem;
-  }
-  .addr_icon {
-    flex-shrink: 0;
-    width: 0.94rem;
-    height: 1.25rem;
-  }
-  .font_2 {
-    font-size: 0.75rem;
-    font-family: 'PingFang SC';
-    line-height: 1.06rem;
-    font-weight: 500;
-    color: #767676;
-  }
-  .job_addr {
-    margin: 0.063rem 0 0.13rem 0.31rem;
-  }
-  .job_year {
-    margin: 0.063rem 0 0.13rem 2.88rem;
-  }
-  .year_icon {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.06rem;
-  }
-  .job_edu {
-    margin: 0.063rem 0 0.13rem 2.06rem;
-  }
-  .edu_icon {
-    margin-top: 0.13rem;
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1rem;
-  }
-  .divider {
-    margin-left: 0.13rem;
-    background-color: #eeeeee;
-    height: 0.063rem;
-  }
-  .view {
-    margin-left: 0;
-  }
-  .job_bu {
-    margin-left: 1.13rem;
-    align-self: flex-start;
-    color: #333333;
-    font-weight: 500;
-  }
-  .font_3 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    font-weight: 500;
-    color: #666666;
-  }
-  .text_2 {
-    margin-left: 1.13rem;
-    align-self: flex-start;
-  }
-  .job_info {
-    padding: 0.38rem 0;
-  }
-  .space-y-6 > *:not(:first-child) {
-    margin-top: 0.38rem;
-  }
-  .job_part {
-    background-color: #ffffff;
-  }
-  .part_title_wrapper {
-    padding: 0.88rem 0;
-  }
-  .part_line {
-    margin: 0.19rem 0 0.13rem;
-    background-color: #6e7ffe;
-    width: 0.13rem;
-    height: 0.94rem;
-  }
-  .font_4 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    font-weight: 500;
-    color: #333333;
-  }
-  .part_detail {
-    padding: 0 0.63rem 0.88rem 1.38rem;
-  }
-  .part-wrapper {
-    margin-right: 0.75rem;
-  }
-  .view_2 {
-    overflow: hidden;
-    height: 19.38rem;
-  }
-  .font_5 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.56rem;
-    color: #333333;
-  }
-  .text_3 {
-    font-size: 0.81rem;
-    line-height: 1.63rem;
-    text-align: justify;
-  }
-  .group {
-    padding: 0 0.63rem 0.75rem 1.38rem;
-  }
-  .space-y-8 > *:not(:first-child) {
-    margin-top: 0.5rem;
-  }
-  .view_3 {
-    overflow: hidden;
-    height: 13.31rem;
-  }
-  .job_salary {
-    padding-bottom: 0.63rem;
-    background-color: #ffffff;
-  }
-  .group_2 {
-    padding: 0.88rem 0 0.63rem;
-  }
-  .text-wrapper {
-    padding-bottom: 0.19rem;
-    align-self: center;
-    overflow: hidden;
-    width: 19.5rem;
-    height: 2.59rem;
-  }
-  .font_6 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    color: #666666;
-  }
-  .text_4 {
-    font-size: 0.81rem;
-  }
-  .text-wrapper_2 {
-    margin-left: 1.38rem;
-    padding-bottom: 0.19rem;
-    align-self: flex-start;
-    overflow: hidden;
-    width: 18.69rem;
-    height: 2.59rem;
-  }
-  .job_hr {
-    padding: 0.88rem 0;
-    background-color: #ffffff;
-  }
-  .space-y-9 > *:not(:first-child) {
-    margin-top: 0.56rem;
-  }
-  .space-x-22 > *:not(:first-child) {
-    margin-left: 1.38rem;
-  }
-  .hr_info {
-    padding-left: 1.31rem;
-    padding-right: 0.75rem;
-  }
-  .avatar_wrapper {
-    margin-top: 0.13rem;
-    padding-bottom: 0.13rem;
-    flex-shrink: 0;
-    width: 2.69rem;
-    position: relative;
-  }
-  .avatar {
-    border-radius: 50%;
-    width: 2.31rem;
-    height: 2.31rem;
-  }
-  .avatar_level {
-    width: 0.88rem;
-    height: 1.06rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  .hr_contact {
-    margin-left: 0.56rem;
-    flex: 1 1 auto;
-  }
-  .hr_user {
-    align-self: flex-start;
-  }
-  .phone {
-    font-size: 0.75rem;
-    font-family: 'PingFang SC';
-    line-height: 1.06rem;
-    color: #666666;
-  }
-  .hr_title {
-    color: #717171;
-  }
-  .hr_email {
-    padding-left: 0.063rem;
-  }
-  .email_icon {
-    flex-shrink: 0;
-    align-self: center;
-    width: 0.75rem;
-    height: 0.56rem;
-  }
-  .email {
-    color: #666666;
-    font-size: 0.75rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-  }
-  .hr_phone {
-    margin-left: 1.25rem;
-    margin-top: 1.5rem;
-    flex-shrink: 0;
-  }
-  .space-x-5 > *:not(:first-child) {
-    margin-left: 0.31rem;
-  }
-  .phone_icon {
-    margin: 0.19rem 0 0.13rem;
-    flex-shrink: 0;
-    width: 0.75rem;
-    height: 0.75rem;
-  }
-  .view_4 {
-    margin-top: 0.38rem;
-  }
-  .group_3 {
-    padding: 0.88rem 0 0.94rem;
-  }
-  .space-x-20 > *:not(:first-child) {
-    margin-left: 1.25rem;
-  }
-  .list {
-    padding-left: 1.38rem;
-    padding-right: 0.63rem;
-  }
-  .list-item {
-    padding: 0.63rem 0 0.81rem;
-  }
-  .list-item:first-of-type {
-    border-top: solid 0.063rem #eeeeee;
-    border-bottom: solid 0.063rem #eeeeee;
-  }
-  .text_6 {
-    margin-left: 0.88rem;
-    align-self: flex-start;
-  }
-  .text_7 {
-    margin-left: 1.13rem;
-    align-self: flex-start;
-  }
-  .section {
-    background-color: #d1d1d1;
-    width: 0.063rem;
-    height: 0.75rem;
-  }
-  .view_5 {
-    margin: 0.31rem 0 0.19rem 0.25rem;
-    flex-shrink: 0;
-  }
-  .text_8 {
-    margin-left: 1.13rem;
-    align-self: flex-start;
-  }
-  .view_6 {
-    margin: 0.31rem 0 0.19rem 0.88rem;
-  }
-  .text_9 {
-    margin-left: 1.13rem;
-    align-self: flex-start;
-  }
-  .space-y-4 > *:not(:first-child) {
-    margin-top: 0.25rem;
-  }
+.page {
+  background-color: #f7fafd;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.header {
+  padding: 4px 6px 8px;
+  background-color: #6e7ffe;
+  height: 64px;
+}
+.space-y-14 > *:not(:first-child) {
+  margin-top: 14px;
+}
+.status_bar {
+  position: relative;
+}
+.network {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.network_icon {
+  flex-shrink: 0;
+  align-self: center;
+  width: 34px;
+  height: 6px;
+}
+.font_1 {
+  font-size: 12px;
+  font-family: "Heiti SC";
+  line-height: 14.08px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.network_signal {
+  margin-bottom: 4px;
+  flex-shrink: 0;
+  width: 13px;
+  height: 9px;
+}
+.status_text {
+  font-size: 12px;
+  font-family: "Heiti SC";
+  line-height: 14.08px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.battery {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.space-x-2 > *:not(:first-child) {
+  margin-left: 2px;
+}
+.battery_icon {
+  margin-bottom: 4px;
+  flex-shrink: 0;
+  width: 25px;
+  height: 10px;
+}
+.nav {
+  padding: 0 6px;
+}
+.image {
+  width: 14px;
+  height: 22px;
+}
+.hr_name {
+  font-size: 16px;
+  font-family: "PingFang SC";
+  line-height: 22px;
+  color: #ffffff;
+}
+.image_2 {
+  width: 14.08px;
+  height: 22.08px;
+}
+.nav_icon {
+  width: 14px;
+  height: 22px;
+}
+.job_detail {
+  padding-bottom: 67px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.job_summary {
+  padding: 12px 0;
+  background-color: #ffffff;
+}
+.space-y-11 > *:not(:first-child) {
+  margin-top: 11px;
+}
+.job_title {
+  font-size: 18px;
+  font-family: "PingFang SC";
+  line-height: 25px;
+  font-weight: 600;
+  color: #333333;
+}
+.text {
+  margin-left: 14px;
+  align-self: flex-start;
+}
+.job_sections {
+  padding: 0 16px;
+}
+.addr_icon {
+  flex-shrink: 0;
+  width: 15px;
+  height: 20px;
+}
+.font_2 {
+  font-size: 12px;
+  font-family: "PingFang SC";
+  line-height: 17px;
+  font-weight: 500;
+  color: #767676;
+}
+.job_addr {
+  margin: 1px 0 2px 5px;
+}
+.job_year {
+  margin: 1px 0 2px 46px;
+}
+.year_icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 17px;
+}
+.job_edu {
+  margin: 1px 0 2px 33px;
+}
+.edu_icon {
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 16px;
+}
+.divider {
+  margin-left: 2px;
+  background-color: #eeeeee;
+  height: 1px;
+}
+.view {
+  margin-left: 0;
+}
+.job_bu {
+  margin-left: 18px;
+  align-self: flex-start;
+  color: #333333;
+  font-weight: 500;
+}
+.job_item_text {
+  font-size: 14px;
+  font-family: "PingFang SC";
+  line-height: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+.text_2 {
+  margin-left: 18px;
+  align-self: flex-start;
+}
+.job_info {
+  padding: 6px 0;
+}
+.space-y-6 > *:not(:first-child) {
+  margin-top: 6px;
+}
+.job_part {
+  background-color: #ffffff;
+}
+.part_title_wrapper {
+  padding: 14px 0;
+}
+.part_line {
+  margin: 3px 0 2px;
+  background-color: #6e7ffe;
+  width: 2px;
+  height: 15px;
+}
+.fav_title {
+  font-size: 14px;
+  font-family: "PingFang SC";
+  line-height: 20px;
+  font-weight: 500;
+  color: #333333;
+}
+.part_detail {
+  padding: 0 10px 14px 22px;
+}
+.part-wrapper {
+  margin-right: 12px;
+}
+.view_2 {
+  overflow: hidden;
+  height: 310px;
+}
+.font_3 {
+  font-size: 14px;
+  font-family: "PingFang SC";
+  line-height: 25px;
+  color: #333333;
+}
+.text_3 {
+  font-size: 13px;
+  line-height: 26px;
+  text-align: justify;
+}
+.group {
+  padding: 0 10px 12px 22px;
+}
+.space-y-8 > *:not(:first-child) {
+  margin-top: 8px;
+}
+.view_3 {
+  overflow: hidden;
+  height: 213px;
+}
+.job_salary {
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+.group_2 {
+  padding: 14px 0 10px;
+}
+.text-wrapper {
+  padding-bottom: 3px;
+  align-self: center;
+  overflow: hidden;
+  width: 312px;
+  height: 41.5px;
+}
+.font_4 {
+  font-size: 14px;
+  font-family: "PingFang SC";
+  line-height: 20px;
+  color: #666666;
+}
+.text_4 {
+  font-size: 13px;
+}
+.text-wrapper_2 {
+  margin-left: 22px;
+  padding-bottom: 3px;
+  align-self: flex-start;
+  overflow: hidden;
+  width: 299px;
+  height: 41.5px;
+}
+.job_hr {
+  padding: 14px 0;
+  background-color: #ffffff;
+}
+.space-y-9 > *:not(:first-child) {
+  margin-top: 9px;
+}
+.space-x-22 > *:not(:first-child) {
+  margin-left: 22px;
+}
+.hr_info {
+  padding-left: 21px;
+  padding-right: 12px;
+}
+.avatar_wrapper {
+  margin-top: 2px;
+  padding-bottom: 2px;
+  flex-shrink: 0;
+  width: 43px;
+  position: relative;
+}
+.avatar {
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+.avatar_level {
+  width: 14px;
+  height: 17px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hr_contact {
+  margin-left: 9px;
+  flex: 1 1 auto;
+}
+.hr_user {
+  align-self: flex-start;
+}
+.font_5 {
+  font-size: 12px;
+  font-family: "PingFang SC";
+  line-height: 17px;
+  color: #666666;
+}
+.hr_email {
+  padding-left: 1px;
+}
+.email_icon {
+  flex-shrink: 0;
+  align-self: center;
+  width: 12px;
+  height: 9px;
+}
+.email {
+  line-height: 20px;
+}
+.hr_phone {
+  margin-left: 20px;
+  margin-top: 24px;
+  flex-shrink: 0;
+}
+.space-x-5 > *:not(:first-child) {
+  margin-left: 5px;
+}
+.phone_icon {
+  margin: 3px 0 2px;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+}
+.view_4 {
+  margin-top: 6px;
+}
+.fav_wrapper {
+  padding: 14px 0 15px;
+}
+.space-x-20 > *:not(:first-child) {
+  margin-left: 20px;
+}
+.job_list {
+  padding-left: 22px;
+  padding-right: 10px;
+}
+.list-item {
+  padding: 10px 0 13px;
+}
+.list-item:first-of-type {
+  border-top: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee;
+}
+.text_5 {
+  margin-left: 14px;
+  align-self: flex-start;
+}
+.text_6 {
+  margin-left: 18px;
+  align-self: flex-start;
+}
+.text_7 {
+  margin-left: 18px;
+  align-self: flex-start;
+}
+.text_8 {
+  margin-left: 18px;
+  align-self: flex-start;
+}
+.space-y-4 > *:not(:first-child) {
+  margin-top: 4px;
+}
+.job_divider {
+  margin: 5px 0 3px 4px;
+  background-color: #d1d1d1;
+  width: 1px;
+  height: 12px;
+}
 </style>
