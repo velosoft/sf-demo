@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <router-view />
+    <tabbar />
   </div>
 </template>
+
+<script>
+import Tabbar from './pages/tabbar/tabbar.vue';
+
+export default {
+  components: {
+    Tabbar
+  }
+}
+</script>
 
 <style>
     /************************************************************

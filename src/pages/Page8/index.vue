@@ -86,33 +86,6 @@
         </van-tabs>
       </div>
     </div>
-
-    <!-- FOOTER -->
-    <div class="flex-col items-center section_3">
-      <div class="flex-row equal-division">
-        <div class="flex-col items-center equal-division-item space-y-3">
-          <img
-            class="image_9"
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/16668477768553904048.png"
-          />
-          <span class="font_6">首页</span>
-        </div>
-        <div class="flex-col items-center equal-division-item space-y-3">
-          <img
-            class="image_9"
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/b82a7052bb0bd8b0b441b096baca453c.png"
-          />
-          <span class="font_5 text_9">职场</span>
-        </div>
-        <div class="flex-col items-center equal-division-item space-y-3">
-          <img
-            class="image_9"
-            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/6278e7125a7e3f03105fe6d8/63574f0efe65f70012e54d8e/06ac8affa59bedc482b244454b78aff6.png"
-          />
-          <span class="font_6">我</span>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -122,7 +95,6 @@ export default {
   data() {
     return {
       tabs_View_43: 0,
-      list_uXTfIHVC: [null, null, null],
       list: [
         {
           title: "跨行业应聘，你有多少胜算率!",
