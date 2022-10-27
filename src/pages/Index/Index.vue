@@ -92,7 +92,7 @@
           </div>
         </div>
       </van-tab>
-      <van-tab title="推荐职位"><TuijianPanel /></van-tab>
+      <van-tab title="推荐职位"><TuijianPanel @showPopup="onShowPopup_Image_2" /></van-tab>
     </van-tabs>
     <van-popup v-model="showPopup_Image_2" position="bottom" :round="true">
       <TuijianPopupPanle />
