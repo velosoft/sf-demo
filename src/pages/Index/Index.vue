@@ -2,7 +2,7 @@
   <div class="flex-col page">
     <div class="flex-col top_box">
       <div class="flex-col search_wrapper">
-        <div class="flex-row justify-center group" style="opacity: 0;">
+        <div class="flex-row justify-center group" style="opacity: 0">
           <div class="flex-row group_2 space-x-5">
             <img
               class="image"
@@ -79,10 +79,14 @@
             />
           </div>
           <div class="flex-col list">
-            <van-swipe-cell @click.native="onClickListItem" :key="i" v-for="(item, i) in listData">
+            <van-swipe-cell
+              @click.native="onClickListItem"
+              :key="i"
+              v-for="(item, i) in listData"
+            >
               <GangweiItem class="listitem" />
               <template #right>
-                <SwipeAction class="swiper_action"/>
+                <SwipeAction class="swiper_action" />
               </template>
             </van-swipe-cell>
           </div>
@@ -90,9 +94,9 @@
       </van-tab>
       <van-tab title="推荐职位"><TuijianPanel /></van-tab>
     </van-tabs>
-    <van-popup v-model="showPopup_Image_2" position="bottom" :round="true"
-      ><TuijianPopupPanle
-    /></van-popup>
+    <van-popup v-model="showPopup_Image_2" position="bottom" :round="true">
+      <TuijianPopupPanle />
+    </van-popup>
   </div>
 </template>
 
@@ -100,7 +104,7 @@
 import GangweiItem from "../../components/GangweiItem/GangweiItem.vue";
 import TuijianPanel from "../../components/TuijianPanel/TuijianPanel.vue";
 import TuijianPopupPanle from "../../components/TuijianPopupPanle/TuijianPopupPanle.vue";
-import SwipeAction from '../../components/SwipeAction/SwipeAction.vue';
+import SwipeAction from "../../components/SwipeAction/SwipeAction.vue";
 
 export default {
   components: { GangweiItem, TuijianPanel, TuijianPopupPanle, SwipeAction },

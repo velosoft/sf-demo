@@ -17,10 +17,18 @@
         <div class="flex-col options">
           <div class="flex-row tag-list">
             <div v-for="(tag, tagIndex) in tags" :key="tagIndex">
-              <input type="checkbox" :id="`tag_${tagIndex}`" v-model="checkedTags" :value="tag" />
-              <div class="flex-col items-center tag-item">
-                <label class="tag" :for="`tag_${tagIndex}`">{{ tag }}</label>
-              </div>
+              <input
+                type="checkbox"
+                :id="`tag_${tagIndex}`"
+                v-model="checkedTags"
+                :value="tag"
+              />
+              <label
+                class="flex-col items-center tag-item"
+                :for="`tag_${tagIndex}`"
+              >
+                <span class="tag">{{ tag }}</span>
+              </label>
             </div>
           </div>
         </div>
@@ -74,7 +82,7 @@ export default {
         "维修经理",
         "后勤管理",
       ],
-      checkedTags: []
+      checkedTags: [],
     };
   },
 
