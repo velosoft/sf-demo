@@ -14,24 +14,14 @@
     <div class="flex-col popup_content">
       <div class="flex-col group space-y-10">
         <span class="title text_3">快捷选项</span>
-        <div class="flex-col options space-y-10">
-          <div class="flex-row space-x-20">
-            <div class="flex-col items-center text-wrapper"><span class="font_2">文员</span></div>
-            <div class="flex-col items-center text-wrapper"><span class="font_2">专员</span></div>
-            <div class="flex-col items-center text-wrapper"><span class="font_2">信息安全</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">前端研发</span></div>
-          </div>
-          <div class="flex-row space-x-20">
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">高级专员</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">交互设计</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">人力资源</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">产品经理</span></div>
-          </div>
-          <div class="flex-row space-x-20">
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">运营</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">点部经理</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">维修经理</span></div>
-            <div class="flex-col items-center text-wrapper_2"><span class="font_3">后勤管理</span></div>
+        <div class="flex-col options">
+          <div class="flex-row tag-list">
+            <div v-for="(tag, tagIndex) in tags" :key="tagIndex">
+              <input type="checkbox" :id="`tag_${tagIndex}`" v-model="checkedTags" :value="tag" />
+              <div class="flex-col items-center tag-item">
+                <label class="tag" :for="`tag_${tagIndex}`">{{ tag }}</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -63,146 +53,168 @@
 </template>
 
 <script>
-  export default {
-    components: {},
-    data() {
-      return {
-        showPicker_View_23: false,
-        valuePicker_View_23: null,
-        columnsPicker_View_23: ['选项1', '选项2', '选项3'],
-      };
-    },
+export default {
+  components: {},
+  data() {
+    return {
+      showPicker_View_23: false,
+      valuePicker_View_23: null,
+      columnsPicker_View_23: ["会计", "销售", "理赔专员"],
+      tags: [
+        "文员",
+        "专员",
+        "信息安全",
+        "前端研发",
+        "高级专员",
+        "交互设计",
+        "人力资源",
+        "产品经理",
+        "运营",
+        "点部经理",
+        "维修经理",
+        "后勤管理",
+      ],
+      checkedTags: []
+    };
+  },
 
-    methods: {
-      onShowPicker_View_23() {
-        this.showPicker_View_23 = true;
-      },
-      onCancelPicker_View_23() {
-        this.showPicker_View_23 = false;
-      },
-      onConfirmPicker_View_23(value) {
-        this.valuePicker_View_23 = value;
-        this.showPicker_View_23 = false;
-      },
+  methods: {
+    onShowPicker_View_23() {
+      this.showPicker_View_23 = true;
     },
-  };
+    onCancelPicker_View_23() {
+      this.showPicker_View_23 = false;
+    },
+    onConfirmPicker_View_23(value) {
+      this.valuePicker_View_23 = value;
+      this.showPicker_View_23 = false;
+    },
+  },
+};
 </script>
 
 <style scoped lang="css">
-  .component-oRkx70Bt {
-    padding-top: 1.25rem;
-    background-color: #ffffff;
-    border-radius: 1.19rem 1.19rem 0.13rem 0.13rem;
-    border-bottom: solid 0.063rem #e6e6e6;
-  }
-  .space-y-19 > *:not(:first-child) {
-    margin-top: 1.19rem;
-  }
-  .popup_header {
-    margin: 0 1rem;
-  }
-  .font_1 {
-    font-size: 1rem;
-    font-family: 'PingFang SC';
-    line-height: 1.38rem;
-    color: #333333;
-  }
-  .space-x-6 > *:not(:first-child) {
-    margin-left: 0.38rem;
-  }
-  .image {
-    margin: 0.13rem 0;
-    flex-shrink: 0;
-    width: 1rem;
-    height: 1.13rem;
-  }
-  .text {
-    color: #4f87ce;
-  }
-  .text_2 {
-    margin-top: 0.19rem;
-    color: #4f87ce;
-    font-size: 1rem;
-    font-family: 'Heiti SC';
-    font-weight: 200;
-    line-height: 1.19rem;
-  }
-  .popup_content {
-    padding: 0.63rem 0 11.63rem;
-    background-color: #ffffff;
-  }
-  .group {
-    padding-bottom: 1.88rem;
-  }
-  .title {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    font-weight: 700;
-    color: #333333;
-  }
-  .text_3 {
-    margin-left: 1.25rem;
-    align-self: flex-start;
-  }
-  .options {
-    padding-left: 1.31rem;
-    padding-right: 0.88rem;
-  }
-  .space-y-10 > *:not(:first-child) {
-    margin-top: 0.63rem;
-  }
-  .space-x-20 > *:not(:first-child) {
-    margin-left: 1.25rem;
-  }
-  .text-wrapper {
-    flex: 1 1 4.38rem;
-    padding: 0.38rem 0;
-    background-color: #7288fc;
-    border-radius: 0.13rem;
-    height: 2rem;
-  }
-  .font_2 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    font-weight: 600;
-    color: #ffffff;
-  }
-  .text-wrapper_2 {
-    flex: 1 1 4.38rem;
-    padding: 0.38rem 0;
-    background-color: #f5f5f5;
-    border-radius: 0.13rem;
-    height: 2rem;
-  }
-  .text_4 {
-    margin-left: 1.25rem;
-    align-self: flex-start;
-  }
-  .group_2 {
-    margin-top: 0.25rem;
-  }
-  .font_3 {
-    font-size: 0.88rem;
-    font-family: 'PingFang SC';
-    line-height: 1.25rem;
-    color: #333333;
-  }
-  .van-field >>> .van-field__label {
-    color: #333333;
-    font-family: 'PingFang SC';
-    font-size: 1rem;
-    line-height: 1.38rem;
-  }
-  .van-field >>> .van-field__value {
-    color: #999999;
-    font-family: 'PingFang SC';
-    font-size: 0.94rem;
-    line-height: 1.31rem;
-  }
-  .van-field {
-    padding-top: 0.75rem;
-    padding-bottom: 0.44rem;
-  }
+.component-oRkx70Bt {
+  padding-top: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 1.19rem 1.19rem 0.13rem 0.13rem;
+  border-bottom: solid 0.063rem #e6e6e6;
+}
+.space-y-19 > *:not(:first-child) {
+  margin-top: 1.19rem;
+}
+.popup_header {
+  margin: 0 1rem;
+}
+.font_1 {
+  font-size: 1rem;
+  font-family: "PingFang SC";
+  line-height: 1.38rem;
+  color: #333333;
+}
+.space-x-6 > *:not(:first-child) {
+  margin-left: 0.38rem;
+}
+.image {
+  margin: 0.13rem 0;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1.13rem;
+}
+.text {
+  color: #4f87ce;
+}
+.text_2 {
+  margin-top: 0.19rem;
+  color: #4f87ce;
+  font-size: 1rem;
+  font-family: "Heiti SC";
+  font-weight: 200;
+  line-height: 1.19rem;
+}
+.popup_content {
+  padding: 0.63rem 0 11.63rem;
+  background-color: #ffffff;
+}
+.group {
+  padding-bottom: 1.88rem;
+}
+.title {
+  font-size: 0.88rem;
+  font-family: "PingFang SC";
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #333333;
+}
+.text_3 {
+  margin-left: 1.25rem;
+  align-self: flex-start;
+}
+.options {
+  padding-left: 1.31rem;
+  padding-right: 0.88rem;
+}
+.space-y-10 > *:not(:first-child) {
+  margin-top: 0.6rem;
+}
+.space-x-20 > *:not(:first-child) {
+  margin-left: 1.25rem;
+}
+
+.tag-list {
+  display: grid;
+  gap: 0.8rem 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tag-item {
+  flex: 1 1 4.38rem;
+  padding: 0.38rem 0;
+  background-color: #f5f5f5;
+  border-radius: 0.13rem;
+  height: 2rem;
+  color: #333333;
+}
+
+.tag-list input:checked + .tag-item {
+  flex: 1 1 4.38rem;
+  padding: 0.38rem 0;
+  background-color: #7288fc;
+  border-radius: 0.13rem;
+  color: #ffffff;
+}
+
+.tag-list input {
+  display: none;
+}
+
+.text_4 {
+  margin-left: 1.25rem;
+  align-self: flex-start;
+}
+.group_2 {
+  margin-top: 0.25rem;
+}
+.tag {
+  font-size: 0.88rem;
+  font-family: "PingFang SC";
+  line-height: 1.25rem;
+}
+
+.van-field >>> .van-field__label {
+  color: #333333;
+  font-family: "PingFang SC";
+  font-size: 1rem;
+  line-height: 1.38rem;
+}
+.van-field >>> .van-field__value {
+  color: #999999;
+  font-family: "PingFang SC";
+  font-size: 0.94rem;
+  line-height: 1.31rem;
+}
+.van-field {
+  padding-top: 0.75rem;
+  padding-bottom: 0.44rem;
+}
 </style>
