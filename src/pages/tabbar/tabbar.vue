@@ -2,7 +2,7 @@
   <div style="height: 100%">
     <router-view />
     <van-tabbar :route="true" active-color="#ff00000" inactive-color="#7d7e80">
-      <van-tabbar-item :to="{ name: 'Page1' }">
+      <van-tabbar-item :to="{ name: 'Home1' }">
         首页
         <template #icon="props">
           <img
@@ -15,7 +15,7 @@
         </template>
       </van-tabbar-item>
 
-      <van-tabbar-item :to="{ name: 'Page8' }">
+      <van-tabbar-item :to="{ name: 'Home2' }">
         职场
         <template #icon="props">
           <img
@@ -28,7 +28,7 @@
         </template>
       </van-tabbar-item>
 
-      <van-tabbar-item :to="{ name: 'Page9' }">
+      <van-tabbar-item :to="{ name: 'Home3' }">
         我
         <template #icon="props">
           <img

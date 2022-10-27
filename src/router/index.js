@@ -19,29 +19,19 @@ const routes = [
       {
         path: '/',
         name: 'Home1',
-        component: Home1,
+        component: Page8,
       },
       {
-        path: '/Home2',
+        path: '/home2',
         name: 'Home2',
-        component: Home2,
+        component: Page8,
+      },
+      {
+        path: '/home3',
+        name: 'Home3',
+        component: Page8,
       },
     ],
-  },
-  {
-    path: '/Home1_1',
-    name: 'Home1_1',
-    component: Home1_1,
-  },
-  {
-    path: '/Home2_2',
-    name: 'Home2_2',
-    component: Home2_2,
-  },
-  {
-    path: '/page8',
-    name: 'Page8',
-    component: Page8,
   },
 ];
 
