@@ -38,7 +38,7 @@
           />
         </van-search>
       </div>
-      <van-swipe class="swiper-rYaW0TQV" autoplay="3000">
+      <van-swipe class="swiper" autoplay="3000">
         <van-swipe-item v-for="item in switch_rYaW0TQV">
           <img
             class="CoverIamge"
@@ -64,7 +64,7 @@
             />
           </div>
           <div class="flex-col list">
-            <GangweiItem @click="onClick_View_9" :key="i" v-for="(item, i) in list_JbEyzVcN" />
+            <GangweiItem class="listitem" @click.native="onClickListItem" :key="i" v-for="(item, i) in listData" />
           </div>
         </div>
       </van-tab>
@@ -87,7 +87,7 @@
         switch_rYaW0TQV: [1, 2, 3],
         showPopup_Image_2: false,
         tabs_View_43: 0,
-        list_JbEyzVcN: [null, null],
+        listData: [1,2,3,4,5,6],
       };
     },
 
@@ -102,8 +102,8 @@
       onShowPopup_Image_2() {
         this.showPopup_Image_2 = true;
       },
-      onClick_View_9() {
-        this.$router.push({ name: 'Page_7zhiweixiangqing' });
+      onClickListItem() {
+        this.$router.push({ name: 'page7' });
       },
     },
   };
@@ -244,15 +244,19 @@
     height: 1.63rem;
   }
   .list {
-    padding: 0 0.31rem;
+    padding: 0 0.63rem;
+  }
+
+  .listitem {
+    margin-top: 0.63rem;
   }
   .space-x-8 > *:not(:first-child) {
     margin-left: 0.5rem;
   }
-  .swiper-rYaW0TQV {
+  .swiper {
     position: relative;
     margin-top: -0.63rem;
-    width: 23.44rem;
+    width: 100%;
     height: 8.38rem;
   }
   .van-search {
